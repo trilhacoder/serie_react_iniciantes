@@ -43,7 +43,7 @@ async function buscaListaVideosMock() {
 }
 
 async function buscaListaVideos() {
-    let response = await fetch('https://www.googleapis.com/youtube/v3/search?key=AIzaSyA87p4RjzDeHKe7kY60hrPyricoft-zOBo&part=snippet&maxResults=10&order=viewCount&channelId=UC7iH-vb74kKzmfG56q9Y3eQ')    
+    let response = await fetch('https://www.googleapis.com/youtube/v3/search?key=<sua chave>&part=snippet&maxResults=10&order=viewCount&channelId=UC7iH-vb74kKzmfG56q9Y3eQ')    
     let json = await response.json()
     
     let videosApi = []
