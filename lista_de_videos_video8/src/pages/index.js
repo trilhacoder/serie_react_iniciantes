@@ -7,7 +7,7 @@ export default function Home() {
   let [ videos, setVideos ] = useState([])
   
   useEffect(() => {
-    fetch('https://www.googleapis.com/youtube/v3/search?key=AIzaSyAlOIRD4A_sd9llVLF-R2LbmEttuDHn4VI&type=video&part=snippet&maxResults=10&order=viewCount&channelId=UC7iH-vb74kKzmfG56q9Y3eQ')
+    fetch('https://www.googleapis.com/youtube/v3/search?key=<sua chave>&type=video&part=snippet&maxResults=10&order=viewCount&channelId=UC7iH-vb74kKzmfG56q9Y3eQ')
       .then(response => response.json())
       .then(json => {
         console.log("json retornado:")
